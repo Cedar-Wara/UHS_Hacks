@@ -7,10 +7,6 @@
     --text-dark: #445038;
 }
 
-*{
-    min-width: 75%
-}
-
 body{
     padding:0;
     margin:0;
