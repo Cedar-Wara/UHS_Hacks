@@ -73,3 +73,8 @@ function promptAI(error){
         addMessage(marked.parse(data.content),"ai");
     }))
 }
+
+makeModelRequest("hello there!").then(((data)=>{
+    document.querySelector(".text-box").value = "";
+    addMessage(marked.parse(data.content),"ai");
+}));
