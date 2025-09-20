@@ -42,6 +42,26 @@ h1{
     margin: 0 0 16px;
 }
 
+.editor-parent {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    flex: 1;
+}
+
+.code-section {
+    width: 50vw;
+    flex-shrink: 0;
+    height: 100vh;
+}
+
 .button {
     background-color: (--primary1);
     border-radius: 5px;
