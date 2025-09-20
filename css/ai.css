@@ -8,13 +8,14 @@
 
 .text-box{
     outline:none;
-    border:2px solid var(--neutral-dark);
+    border:3px solid var(--neutral-dark);
     background:none;
     border-radius:5px;
     padding:4px;
     font-size:16px;
     transition: border ease-in-out .15s, border-radius ease-in-out .15s;
     margin:4px;
+    flex:1;
 }
 
 .ai-response{
@@ -23,24 +24,39 @@
     flex:1;
 }
 .ai-response::-webkit-scrollbar {
-    display: none; /* Hides the scrollbar */
+    display: none;
 }
 
 .text-box:focus{
-    border: 4px solid transparent; /* Essential for showing the background beneath */
-    border-radius: 10px; /* Example border-radius */
+    border: 3px solid transparent;
+    border-radius: 10px;
     background:
-            linear-gradient(var(--neutral-med), var(--neutral-med)) padding-box, /* Inner background */
-            linear-gradient(155deg, #dc7692, #70d4ff) border-box; /* Gradient border background */
+            linear-gradient(var(--neutral-med), var(--neutral-med)) padding-box,
+            linear-gradient(155deg, #ea3e6d, #70d4ff) border-box;
     background-clip: padding-box, border-box;
     background-origin: border-box;
 }
 
-.gradient-border-pseudo:focus::before {
-    content: '';
-    position: absolute;
-    inset: -4px; /* Adjust to control border thickness */
-    background: linear-gradient(to right, #ffafc7, #73d7ee);
-    border-radius: inherit; /* Inherit border-radius from parent */
-    z-index: -1; /* Place behind the main content */
+
+.input-bar{
+    display: flex;
+    flex-direction: row;
+}
+
+.send-button{
+    border:3px solid var(--neutral-dark);
+    background:none;
+    border-radius:5px;
+    padding:4px;
+    font-size:16px;
+    transition: border ease-in-out .15s, border-radius ease-in-out .15s;
+}
+
+.send-button:hover{
+    border: 3px solid transparent;
+    background:
+            linear-gradient(var(--neutral-med), var(--neutral-med)) padding-box,
+            linear-gradient(155deg, #70b8ff, #70d4ff) border-box;
+    background-clip: padding-box, border-box;
+    background-origin: border-box;
 }
