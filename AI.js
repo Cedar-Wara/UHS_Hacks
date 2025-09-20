@@ -1,8 +1,9 @@
-const token = "vck_7FrOn8NYXQyMNOA1WTNEh1X2JIitCc4nhns5b2S21WoHlqvYAr0T4dDg"
-//sk-a4156b91113743e19bfd9b5bb161f0ca
+const token = "sk-a4156b91113743e19bfd9b5bb161f0ca"
+
 let messageHistory =[
 
 ]
+
 
 async function makeModelRequest(message) {
     messageHistory.push({
@@ -11,17 +12,18 @@ async function makeModelRequest(message) {
     })
 
     console.log(`Bearer `+token)
-    const response = await fetch('https://ai-gateway.vercel.sh/v1/chat/completions', {
+    const response = await fetch('https://api.deepseek.com/chat/completions', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
             'Authorization': `Bearer `+token, // Replace with your actual API key
         },
         body: JSON.stringify({
-            model: 'anthropic/claude-4-sonnet',
+            model: 'deepseek-chat',
             messages: [
                 { role: 'user', content: 'What is the capital of France?' }
-            ]
+            ],
+            stream:false,
         })
     });
 
