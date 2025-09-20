@@ -23,6 +23,11 @@ body {
     font-size:18px;
 }
 
+.banner{
+    height : vh;
+    width : vw;
+}
+
 .editor-parent {
     width: 100vw;
     height: 100vh;
