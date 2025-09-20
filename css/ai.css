@@ -17,6 +17,15 @@
     margin:4px;
 }
 
+.ai-response{
+    margin:4px;
+    overflow-y:scroll;
+    flex:1;
+}
+.ai-response::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar */
+}
+
 .text-box:focus{
     border: 4px solid transparent; /* Essential for showing the background beneath */
     border-radius: 10px; /* Example border-radius */
