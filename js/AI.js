@@ -39,3 +39,13 @@ async function makeModelRequest(message) {
 
     return data;
 }
+
+function sendMessage(message){
+    let newEl = document.createElement("div")
+    newEl.outerHTML=`
+<div class="human-message">
+    <div class="message">${message}</div>
+    <div class="icon-container"></div>
+</div>
+    `
+}
