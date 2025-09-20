@@ -377,10 +377,11 @@ let pipeWidth = 50;
 let score = 0;
 
 function setup() {
-  //setup code here
+  createCanvas(500,500);
 }
 
 function draw() {
+
   background(100, 200, 255)
 
   if (crashed == false) {
