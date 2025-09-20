@@ -62,3 +62,18 @@
     background-clip: padding-box, border-box;
     background-origin: border-box;
 }
+
+.message{
+    color:var(--dark-text);
+    display:flex;
+    flex-direction: row;
+}
+
+.message .content{
+    flex:1;
+}
+
+.message .icon-container{
+    width:32px;
+    height:100%;
+}

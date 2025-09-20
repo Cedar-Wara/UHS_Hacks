@@ -40,10 +40,11 @@ async function makeModelRequest(message) {
     return data;
 }
 
-function sendMessage(message){
+function addMessage(message){
     let newEl = document.createElement("div")
+    newEl.className="message human"
     newEl.innerHTML=`
-    <div class="message">${message}</div>
+    <div class="content">${message}</div>
     <div class="icon-container"></div>
     `
     document.querySelector(".ai-response").appendChild(newEl)
@@ -56,5 +57,5 @@ document.querySelector(".send-button").addEventListener("click", ()=>{
     if(value===null||value===undefined){
         return;
     }
-    sendMessage(value);
+    addMessage(value);
 })
