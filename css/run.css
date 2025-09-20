@@ -7,10 +7,18 @@
 
 .console-log {
     color: #eb6f92;
+    background: rgba(235, 111, 146, 0.21);
+    margin:4px;
+    border-left: 2px solid #eb6f92;
+    padding-left:4px;
 }
 
 .console-log.log {
     color: #191724;
+    background: rgba(25, 23, 36, 0.23);
+    margin:4px;
+    border-left: 2px solid #191724;
+    padding-left:4px;
 }
 
 .exec-frame {
