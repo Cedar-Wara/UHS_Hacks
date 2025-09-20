@@ -1,6 +1,6 @@
 require.config({ paths: { 'vs': 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.26.1/min/vs' }});
 require(["vs/editor/editor.main"], () => {
-    monaco.editor.create(document.querySelector('.text-editor-container'), {
+    monaco.editor.create(document.querySelector('.code-section'), {
         value: `function x() {
           console.log("Hello world!");
         }`,
