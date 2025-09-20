@@ -383,7 +383,8 @@ if (ready && x > 0) {
 `,
     language: 'javascript',
     theme: 'rosepine',
-    fontSize: 15,
+    font: 'JetBrains Mono',
+
   });
 });
 
