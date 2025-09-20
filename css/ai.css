@@ -68,7 +68,7 @@
     color:var(--dark-text);
     display:flex;
     flex-direction: row;
-    margin-bottom:8px;
+    margin-bottom:16px;
 }
 
 .message .content{
@@ -82,9 +82,12 @@
 .message.ai{
     text-align:left;
 }
+.message.ai *{
+    margin:0;
+}
 
 .message .icon-container{
-    width:32px;
+    width:26px;
     height:100%;
-
+    padding:8px;
 }

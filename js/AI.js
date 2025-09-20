@@ -44,11 +44,11 @@ function addMessage(message,type){
     if(type==="human") {
         newEl.innerHTML = `
         <div class="content">${message}</div>
-        <div class="icon-container"></div>
+        <img class="icon-container" src="imgs/user.png">
         `
     }else{
         newEl.innerHTML = `
-        <div class="icon-container"></div>
+        <img class="icon-container" src="imgs/icon.png">
         <div class="content">${message}</div>
         `
     }
