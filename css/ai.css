@@ -1,0 +1,10 @@
+:root{
+    --ai-gradient:linear-gradient(155deg,var(--primary1) 0%, var(--primary2) 100%);;
+}
+
+.text-box{
+    outline:none;
+    border:2px solid var(--neutral-dark);
+    background:none;
+    border-radius:10px;
+}
