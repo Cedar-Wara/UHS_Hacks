@@ -25,8 +25,8 @@ body {
 
 .introduction{
     background-image: url("imgs/placeholderLight.png");
-    height : vh;
-    width : vw;
+    height : 50vh;
+    width : 50vw;
 }
 
 .editor-parent {
@@ -40,7 +40,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    flex: 1
+    flex: 1;
 }
 
 .code-section {
