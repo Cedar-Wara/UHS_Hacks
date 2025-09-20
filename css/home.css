@@ -14,7 +14,7 @@
     padding: 0;
     border: 0
 }
-body {
+body{
     font-family: var(--font);
 
     padding: 0;
@@ -27,7 +27,7 @@ body {
 }
 
 .introduction{
-    background-image: url("../imgs/placeholderLight.png");
+    background-image: url("/imgs/placeholderLight.png");
     height : 75vh;
     width : 100vw;
 
@@ -40,26 +40,6 @@ body {
 
 h1{
     margin: 0 0 16px;
-}
-
-.editor-parent {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-}
-
-.section {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    flex: 1;
-}
-
-.code-section {
-    width: 50vw;
-    flex-shrink: 0;
-    height: 100vh;
 }
 
 .button {
