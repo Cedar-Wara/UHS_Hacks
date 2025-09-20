@@ -21,7 +21,7 @@ async function makeModelRequest(message) {
         body: JSON.stringify({
             model: 'deepseek-chat',
             messages: [
-                { role: 'user', content: 'What is the capital of France?' }
+                { role: 'user', content: message }
             ],
             stream:false,
         })
@@ -29,24 +29,29 @@ async function makeModelRequest(message) {
 
     const data = await response.json();
     console.log(data);
+    let out = data.choices[0].message
 
-    messageHistory.push({
-        role:"assistant",
-        content:message,
-    })
+    messageHistory.push(out)
 
-    console.log(data);
+    console.log(out);
 
-    return data;
+    return out;
 }
 
-function addMessage(message){
+function addMessage(message,type){
     let newEl = document.createElement("div")
-    newEl.className="message human"
-    newEl.innerHTML=`
-    <div class="content">${message}</div>
-    <div class="icon-container"></div>
-    `
+    newEl.className="message "+type
+    if(type==="human") {
+        newEl.innerHTML = `
+        <div class="content">${message}</div>
+        <div class="icon-container"></div>
+        `
+    }else{
+        newEl.innerHTML = `
+        <div class="icon-container"></div>
+        <div class="content">${message}</div>
+        `
+    }
     document.querySelector(".ai-response").appendChild(newEl)
 }
 
@@ -57,5 +62,8 @@ document.querySelector(".send-button").addEventListener("click", ()=>{
     if(value===null||value===undefined){
         return;
     }
-    addMessage(value);
+    addMessage(value,"human");
+    makeModelRequest(value).then(((data)=>{
+        addMessage(marked.parse(data.content),"ai");
+    }));
 })
