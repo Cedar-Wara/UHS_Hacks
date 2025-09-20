@@ -10,3 +10,7 @@ frame.onload = ()=>{
     console.log(getEditorValue())
     frame.contentWindow.postMessage(getEditorValue())
 }
+
+window.addEventListener('message', e => {
+    console.log(e)
+})

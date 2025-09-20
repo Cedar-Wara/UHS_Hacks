@@ -18,7 +18,7 @@ console.log = (...args)=>{
     window.parent.postMessage(args)
 }
 
-document.addEventListener("message", (event)=>{
+window.addEventListener("message", (event)=>{
     runJs(event.data)
     console.log(event.data)
 })
@@ -68,11 +68,6 @@ function startP5(drawArg,setupArg,otherFunctions) {
         createCanvas(500,500);
         createCanvas = function (){
             console.error("createCanvas is disabled");
-        }
-        for(let s of rejectedFunctions){
-            eval(s+` = ()=>{
-                console.error(s+" is disabled");
-            }`)
         }
         document.getElementById("defaultCanvas0").style.width = "100vmin";
         document.getElementById("defaultCanvas0").style.height = "100vmin";
