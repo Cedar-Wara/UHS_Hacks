@@ -30,6 +30,11 @@ body {
     background-image: url("../imgs/placeholderLight.png");
     height : 75vh;
     width : 100vw;
+
+}
+
+h1{
+    margin: 0 0 16px;
 }
 
 .editor-parent {
