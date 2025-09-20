@@ -1,6 +1,7 @@
 :root {
     --neutral-light: #faf4ed;
     --neutral-med: #f4ede8;
+    --neutral-med-dark: #eadfd7;
     --neutral-dark: #bcb1a9;
 
     --primary1: #b4637a;
@@ -18,7 +19,7 @@
 
 body {
     font-family: var(--font);
-    background: var(--neutral-med);
+    background: var(--neutral-med-dark);
     padding: 0;
     margin: 0;
     overflow: hidden;
