@@ -1,102 +1,104 @@
-:root{
-    --ai-gradient:linear-gradient(155deg,var(--primary1) 0%, var(--primary2) 100%);
+:root {
+    --ai-gradient: linear-gradient(155deg, var(--primary1) 0%, var(--primary2) 100%);
 }
 
-.ai-section{
-    width:25vw;
+.ai-section {
+    width: 25vw;
     justify-content: space-between;
 }
 
-.text-box{
-    outline:none;
-    border:3px solid var(--neutral-dark);
-    background:none;
-    border-radius:5px;
-    padding:4px;
-    font-size:16px;
+.text-box {
+    outline: none;
+    border: 3px solid var(--neutral-dark);
+    background: none;
+    border-radius: 5px;
+    padding: 4px;
+    font-size: 16px;
     transition: border ease-in-out .15s, border-radius ease-in-out .15s;
-    margin:4px;
-    flex:1;
+    margin: 4px;
+    flex: 1;
 }
 
-.ai-response{
-    margin:4px;
-    overflow-y:scroll;
-    flex:1;
-    padding:4px;
+.ai-response {
+    margin: 4px;
+    overflow-y: scroll;
+    flex: 1;
+    padding: 4px;
 }
+
 .ai-response::-webkit-scrollbar {
     display: none;
 }
 
-.text-box:focus{
+.text-box:focus {
     border: 3px solid transparent;
     border-radius: 10px;
     background:
-            linear-gradient(var(--neutral-med), var(--neutral-med)) padding-box,
-            linear-gradient(155deg, #ea3e6d, #70d4ff) border-box;
+        linear-gradient(var(--neutral-med), var(--neutral-med)) padding-box,
+        linear-gradient(155deg, #ea3e6d, #70d4ff) border-box;
     background-clip: padding-box, border-box;
     background-origin: border-box;
 }
 
 
-.input-bar{
+.input-bar {
     display: flex;
     flex-direction: row;
 }
 
-.send-button{
-    color:var(--dark-text);
+.send-button {
+    color: var(--dark-text);
 
-    border:3px solid var(--neutral-dark);
-    background:none;
-    border-radius:5px;
-    padding:4px;
-    font-size:16px;
+    border: 3px solid var(--neutral-dark);
+    background: none;
+    border-radius: 5px;
+    padding: 4px;
+    font-size: 16px;
     transition: border ease-in-out .15s, border-radius ease-in-out .15s;
 }
 
-.send-button:hover{
+.send-button:hover {
     border: 3px solid transparent;
     background:
-            linear-gradient(var(--neutral-med), var(--neutral-med)) padding-box,
-            linear-gradient(155deg, #70b8ff, #70d4ff) border-box;
+        linear-gradient(var(--neutral-med), var(--neutral-med)) padding-box,
+        linear-gradient(155deg, #70b8ff, #70d4ff) border-box;
     background-clip: padding-box, border-box;
     background-origin: border-box;
 }
 
-.message{
-    color:var(--dark-text);
-    display:flex;
+.message {
+    color: var(--dark-text);
+    display: flex;
     flex-direction: row;
-    margin-bottom:16px;
+    margin-bottom: 16px;
 }
 
-.message .content{
-    flex:1;
+.message .content {
+    flex: 1;
 }
 
-.message.human{
-    text-align:right;
+.message.human {
+    text-align: right;
 }
 
-.message.ai{
-    text-align:left;
-}
-.message.ai *{
-    margin:0;
+.message.ai {
+    text-align: left;
 }
 
-.message .icon-container{
+.message.ai * {
+    margin: 0;
+}
+
+.message .icon-container {
 
     width: 26px;
     height: 26px;
     aspect-ratio: 1;
-    padding:8px;
+    padding: 8px;
 }
 
-.title{
-    color:var(--dark-text);
-    font-size:25px;
+.title {
+    color: var(--dark-text);
+    font-size: 25px;
     font-weight: bold;
 }
