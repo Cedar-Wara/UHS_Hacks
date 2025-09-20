@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codemirror@6.0.1/lib/codemirror.css">
 
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="run.css">
+
     <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/monaco-themes@0.4.7/src/index.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.26.1/min/vs/loader.min.js"></script>
@@ -19,7 +21,14 @@
         <div class="ai-section section"></div>
         <div class="code-section section">
         </div>
-        <div class="run-section section"></div>
+        <div class="run-section section">
+            <div class="exec-frame">
+                <iframe src="exec/exec.html"></iframe>
+            </div>
+            <div class="console">
+
+            </div>
+        </div>
     </div>
 </body>
 </html>

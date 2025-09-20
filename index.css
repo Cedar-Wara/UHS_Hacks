@@ -1,7 +1,7 @@
 :root{
-    --theme-light-pink:#f6c3d6;
-    --theme-dark:#fd81a5;
-    --theme-light-green: #7e9286;
+    --neutral-light:#fff;
+    --neutral-med:#29253b;
+    --neutral-dark:#fff;
 
     --text-pink:#bf4458;
     --text-dark: #445038;
@@ -28,4 +28,9 @@ body{
 .code-section{
     width:50vw;
     height:100vh;
+}
+
+.run-section{
+    display:flex;
+    flex-direction:column;
 }
