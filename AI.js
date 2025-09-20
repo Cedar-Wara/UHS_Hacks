@@ -13,7 +13,6 @@ async function makeModelRequest(message) {
     console.log(`Bearer `+token)
     const response = await fetch('https://ai-gateway.vercel.sh/v1/chat/completions', {
         method: 'POST',
-        mode:"no-cors",
         headers: {
             'Content-Type': 'application/json',
             'Authorization': `Bearer `+token, // Replace with your actual API key
