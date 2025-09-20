@@ -5,7 +5,10 @@
 
     --text-pink:#bf4458;
     --text-dark: #445038;
-    min-width: 75%;
+}
+
+*{
+    min-width: 75%
 }
 
 body{
