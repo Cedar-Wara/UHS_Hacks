@@ -1,6 +1,15 @@
 const Token = "v1:tfI1vqwAqih9PLP9I8muidxl:ZIg4ykpEPAJOHLcjKgP48rva"
 
-async function makeModelRequest() {
+let messageHistory =[
+
+]
+
+async function makeModelRequest(message) {
+    messageHistory.push({
+        role:"user",
+        content:message,
+    })
+
     const response = await fetch('https://api.vercel.com/v6/ai-gateway/chat/completions', {
         method: 'POST',
         headers: {
@@ -17,4 +26,13 @@ async function makeModelRequest() {
 
     const data = await response.json();
     console.log(data);
+
+    messageHistory.push({
+        role:"assistant",
+        content:message,
+    })
+
+    console.log(data);
+
+    return data;
 }
