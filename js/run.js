@@ -7,5 +7,6 @@ document.querySelector(".run-button").addEventListener("click",()=>{
 })
 
 frame.onload = ()=>{
+    console.log(getEditorValue())
     frame.contentWindow.postMessage(getEditorValue())
 }
