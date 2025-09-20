@@ -1,7 +1,76 @@
-document.addEventListener("onmessage", ()=>{
-    runP5()
+console.log = (...args)=>{
+    window.parent.postMessage(args)
+}
+
+document.addEventListener("message", (message)=>{
+    runJs(message)
+    console.log(message)
 })
 
-function runP5(code){
-    eval(code)
+function runJs(js){
+    //clear dangerous objects and run code
+    let nl = "\n"
+    eval(`
+        try {
+            `+js+`
+        }catch(e){
+            let stack = e.stack.split(nl);
+            let lineCol = stack[1].replace("at eval (eval at runJs (webpack:///./src/exec/index.js?),","").replace(")","").split(":");
+            let out = lineCol[1]-2+":"+lineCol[2];
+            console.error(" "+out+" : "+stack[0]);
+        }
+    `);
+
+    let eventFunctions = [];
+
+    for (let acceptedFunc of acceptedFunctions){
+        let funcDef;
+        try {
+            funcDef = eval(acceptedFunc);
+        }catch(e){
+            funcDef = undefined;
+        }
+
+        if (funcDef !== undefined) {
+            eventFunctions.push(funcDef);
+        }
+    }
+
+    if(draw===undefined||setup===undefined){
+        return;
+    }
+
+    startP5(draw,setup,eventFunctions);
 }
+
+
+//helpers
+
+
+function startP5(drawArg,setupArg,otherFunctions) {
+    window.setup = function(){
+        createCanvas(500,500);
+        createCanvas = function (){
+            console.error("createCanvas is disabled");
+        }
+        for(let s of rejectedFunctions){
+            eval(s+` = ()=>{
+                console.error(s+" is disabled");
+            }`)
+        }
+        document.getElementById("defaultCanvas0").style.width = "100vmin";
+        document.getElementById("defaultCanvas0").style.height = "100vmin";
+        setupArg()
+    };
+
+    for(let func of otherFunctions){
+        if(acceptedFunctions.includes(func.name)) {
+            window[func.name] = func;
+        }
+    }
+
+    window.draw = drawArg;
+
+    new p5();
+}
+
