@@ -18,9 +18,9 @@ console.log = (...args)=>{
     window.parent.postMessage(args)
 }
 
-document.addEventListener("message", (message)=>{
-    runJs(message)
-    console.log(message)
+document.addEventListener("message", (event)=>{
+    runJs(event.data)
+    console.log(event.data)
 })
 
 function runJs(js){
