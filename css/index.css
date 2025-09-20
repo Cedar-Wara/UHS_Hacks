@@ -1,7 +1,7 @@
 :root {
     --neutral-light: #faf4ed;
     --neutral-med: #f4ede8;
-    --neutral-dark: #191723;
+    --neutral-dark: #bcb1a9;
 
     --primary1: #b4637a;
     --primary2: #397997;
@@ -10,6 +10,10 @@
     --light-text: #e0def4;
 
     --font: "JetBrains Mono";
+}
+
+*{
+    font-family: var(--font) system-ui;
 }
 
 body {
