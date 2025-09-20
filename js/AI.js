@@ -64,6 +64,7 @@ document.querySelector(".send-button").addEventListener("click", ()=>{
     }
     addMessage(value,"human");
     makeModelRequest(value).then(((data)=>{
+        document.querySelector(".text-box").value = "";
         addMessage(marked.parse(data.content),"ai");
     }));
 })

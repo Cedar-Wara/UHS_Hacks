@@ -58,6 +58,7 @@ h1{
 
 .code-section {
     width: 50vw;
+    flex-shrink: 0;
     height: 100vh;
 }
 

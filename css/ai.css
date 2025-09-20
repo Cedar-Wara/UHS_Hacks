@@ -3,6 +3,7 @@
 }
 
 .ai-section{
+    width:25vw;
     justify-content: space-between;
 }
 
@@ -90,4 +91,10 @@
     width:26px;
     height:100%;
     padding:8px;
+}
+
+.title{
+    color:var(--dark-text);
+    font-size:25px;
+    font-weight: bold;
 }
