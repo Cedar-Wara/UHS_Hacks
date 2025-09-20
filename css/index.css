@@ -19,7 +19,7 @@
 
 body {
     font-family: var(--font);
-    background: var(--neutral-med);
+    background: var(--neutral-med-dark);
     padding: 0;
     margin: 0;
     overflow: hidden;

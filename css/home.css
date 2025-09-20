@@ -8,7 +8,7 @@ body {
     color: var(--light-text);
 
     font-size:18px;
-
+    background:var(--neutral-med);
 }
 
 .introduction {
@@ -103,4 +103,26 @@ button:active {
     height:100%;
     border-radius: 10px;
     border:2px solid var(--neutral-dark);
+}
+
+.subtitle{
+    font-size:25px;
+}
+
+.project{
+    border-radius: 10px;
+    border:2px solid var(--neutral-dark);
+    color:var(--dark-text);
+    display:flex;
+    justify-content: space-between;
+    padding:6px;
+    margin:8px;
+    align-items: center;
+}
+
+.open-button{
+    border-radius: 5px;
+    background-color:var(--primary1);
+    color:var(--light-text);
+    text-decoration:none;
 }
