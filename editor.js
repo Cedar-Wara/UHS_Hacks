@@ -360,7 +360,7 @@ require(["vs/editor/editor.main"], () => {
   monaco.editor.defineTheme('rosepine', JSON.parse(rosepineLightJson));
   monaco.editor.setTheme('rosepine');
 
-  monaco.editor.create(document.querySelector('.code-section'), {
+    window.editor = monaco.editor.create(document.querySelector('.code-section'), {
     value: `// welcome!
 const msg = "Hello, world!";
 let x = 5;
@@ -386,3 +386,6 @@ if (ready && x > 0) {
   });
 });
 
+function getEditorValue(){
+    return window.editor.getValue();
+}
