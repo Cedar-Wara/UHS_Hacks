@@ -1,5 +1,5 @@
 :root{
-    --ai-gradient:linear-gradient(155deg,var(--primary1) 0%, var(--primary2) 100%);;
+    --ai-gradient:linear-gradient(155deg,var(--primary1) 0%, var(--primary2) 100%);
 }
 
 .text-box{
@@ -9,4 +9,24 @@
     border-radius:5px;
     padding:4px;
     font-size:16px;
+    transition: border ease-in-out .15s, border-radius ease-in-out .15s;
+}
+
+.text-box:focus{
+    border: 4px solid transparent; /* Essential for showing the background beneath */
+    border-radius: 10px; /* Example border-radius */
+    background:
+            linear-gradient(var(--neutral-med), var(--neutral-med)) padding-box, /* Inner background */
+            linear-gradient(155deg, #dc7692, #70d4ff) border-box; /* Gradient border background */
+    background-clip: padding-box, border-box;
+    background-origin: border-box;
+}
+
+.gradient-border-pseudo:focus::before {
+    content: '';
+    position: absolute;
+    inset: -4px; /* Adjust to control border thickness */
+    background: linear-gradient(to right, #ffafc7, #73d7ee);
+    border-radius: inherit; /* Inherit border-radius from parent */
+    z-index: -1; /* Place behind the main content */
 }
