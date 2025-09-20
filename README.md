@@ -13,6 +13,6 @@
 ### Brainstorming:
 - Structured Output
 - What is our app?
-    - Tutoring
-        - programming?
-        - real-time learning in practice
+    - Project-based learning
+    - Monaco editor built in
+    - AI tutor, helps get through roadblocks
