@@ -1,31 +1,32 @@
-:root {
-    --neutral-light: #fff;
-    --neutral-med: #29253b;
-    --neutral-dark: #fff;
+:root{
+    --neutral-light:#fff;
+    --neutral-med:#191723;
+    --neutral-dark:#232136;
 
-    --text-pink: #bf4458;
-    --text-dark: #445038;
+    --primary1:#d56688;
+    --primary2:#397997;
 }
 
-body {
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
+body{
+    background:var(--neutral-med);
+    padding:0;
+    margin:0;
+    overflow:hidden;
 }
 
-.editor-parent {
+.editor-parent{
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: row;
 }
 
-.section {
-    height: 100vh;
-    flex: 1
+.section{
+    height:100vh;
+    flex:1
 }
 
-.code-section {
-    width: 50vw;
-    height: 100vh;
+.code-section{
+    width:50vw;
+    height:100vh;
 }
