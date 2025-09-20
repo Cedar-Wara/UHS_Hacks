@@ -29,3 +29,8 @@ body{
     width:50vw;
     height:100vh;
 }
+
+.run-section{
+    display:flex;
+    flex-direction:column;
+}

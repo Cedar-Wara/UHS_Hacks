@@ -1,0 +1,7 @@
+.console{
+    border-top:1px var(--primary1)
+}
+
+.exec-frame{
+    height:50vh;
+}
