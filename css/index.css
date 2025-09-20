@@ -12,7 +12,7 @@
     --font: "JetBrains Mono";
 }
 
-*{
+* {
     font-family: var(--font) system-ui;
 }
 
@@ -24,7 +24,7 @@ body {
     overflow: hidden;
     color: var(--light-text);
 
-    font-size:18px;
+    font-size: 18px;
 }
 
 .editor-parent {
