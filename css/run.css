@@ -1,16 +1,16 @@
 .console {
     border-top: 2px solid var(--primary2);
-    background-color: #191724;
+    background-color: var(--neutral-med);
     flex:1;
     font-size: .67em;
 }
 
-.log {
+.console-log {
     color: #eb6f92;
 }
 
-.message {
-    color: var(--light-text);
+.console-log.log {
+    color: #191724;
 }
 
 .exec-frame {
