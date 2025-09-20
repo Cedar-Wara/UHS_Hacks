@@ -88,8 +88,10 @@
 }
 
 .message .icon-container{
-    width:26px;
-    height:100%;
+
+    width: 26px;
+    height: 26px;
+    aspect-ratio: 1;
     padding:8px;
 }
 

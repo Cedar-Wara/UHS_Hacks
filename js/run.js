@@ -15,7 +15,9 @@ window.addEventListener('message', e => {
   }
 
   logConsole(e.data.message, e.data.type)
+  if(e.data.type!="log") {
     promptAI(e.data.message);
+  }
 })
 
 function logConsole(output, type) {

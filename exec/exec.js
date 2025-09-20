@@ -24,7 +24,6 @@ console.error = (...args) => {
 
 window.addEventListener("message", (event) => {
   runJs(event.data)
-  console.log(event.data)
 })
 
 function runJs(js) {
