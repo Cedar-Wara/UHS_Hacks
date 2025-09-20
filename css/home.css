@@ -24,7 +24,7 @@ body {
 }
 
 .introduction{
-    background-image: url("imgs/placeholder.jpg");
+    background-image: url("imgs/placeholderLight.png");
     height : vh;
     width : vw;
 }
