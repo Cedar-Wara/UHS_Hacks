@@ -67,6 +67,9 @@ document.querySelector(".send-button").addEventListener("click", ()=>{
     }));
 })
 
-function promptAI(){
-
+function promptAI(error){
+    let message = "I am having the error: "+error+". for my code: "+getEditorValue();
+    makeModelRequest(message).then(((data)=>{
+        addMessage(marked.parse(data.content),"ai");
+    }))
 }
