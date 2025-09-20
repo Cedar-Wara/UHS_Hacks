@@ -22,6 +22,7 @@
     margin:4px;
     overflow-y:scroll;
     flex:1;
+    padding:4px;
 }
 .ai-response::-webkit-scrollbar {
     display: none;
@@ -67,13 +68,23 @@
     color:var(--dark-text);
     display:flex;
     flex-direction: row;
+    margin-bottom:8px;
 }
 
 .message .content{
     flex:1;
 }
 
+.message.human{
+    text-align:right;
+}
+
+.message.ai{
+    text-align:left;
+}
+
 .message .icon-container{
     width:32px;
     height:100%;
+
 }
