@@ -10,7 +10,6 @@ frame.onload = () => {
 }
 
 window.addEventListener('message', e => {
-  // console.log(e)
   logConsole(e.data.message, e.data.type)
     promptAI(e.data.message);
 })
@@ -24,4 +23,3 @@ function logConsole(output, type) {
     `
   document.querySelector(".console").appendChild(newEl)
 }
-
