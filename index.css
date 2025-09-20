@@ -1,3 +1,12 @@
+:root{
+    --neutral-light:#fff;
+    --neutral-med:#fff;
+    --neutral-dark:#fff;
+
+    --primary1: #00b2ff;
+    --primary2: #ff00fb;
+}
+
 body{
     padding:0;
     margin:0;
