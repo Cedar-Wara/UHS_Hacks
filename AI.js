@@ -1,4 +1,4 @@
-const Token = "vck_7FrOn8NYXQyMNOA1WTNEh1X2JIitCc4nhns5b2S21WoHlqvYAr0T4dDg"
+const Token = "vck_3SU07YKfunnAtTjjsVfETj8h498Mw0ULLXXtttKN17MiULimCf101pfm"
 
 let messageHistory =[
 
