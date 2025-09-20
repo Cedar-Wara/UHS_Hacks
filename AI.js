@@ -22,7 +22,8 @@ async function makeModelRequest(message) {
             model: 'deepseek-chat',
             messages: [
                 { role: 'user', content: 'What is the capital of France?' }
-            ]
+            ],
+            stream:false,
         })
     });
 
