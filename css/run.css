@@ -1,7 +1,7 @@
 .console {
     border-top: 2px solid var(--primary2);
     background-color: var(--neutral-med);
-    flex:1;
+    flex: 1;
     font-size: .67em;
 }
 
@@ -39,7 +39,7 @@
     transition: transform 0.3s ease;
     cursor: pointer;
     user-select: none;
-    font-size:20px;
+    font-size: 20px;
 }
 
 .button-bar {
