@@ -26,20 +26,23 @@ body {
 
 }
 
-.introduction{
+.introduction {
     background-image: url("../imgs/placeholderLight.png");
-    height : 75vh;
-    width : 100vw;
-
+    height: 20vh;
+    width: 100vw;
+    color:var(--dark-text);
+    background-position: 0 -600px;
+    background-repeat: no-repeat;
+    display: flex;
 }
 
-.introductiontext{
-    background-color: (--neutral-med);
-    border-radius: 10px;
-}
-
-h1{
+.title{
     margin: 0 0 16px;
+    font-size:80px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-left:16px;
 }
 
 .editor-parent {
@@ -47,6 +50,7 @@ h1{
     height: 100vh;
     display: flex;
     flex-direction: row;
+
 }
 
 .section {
