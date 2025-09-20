@@ -1,4 +1,4 @@
-const Token = "vck_3SU07YKfunnAtTjjsVfETj8h498Mw0ULLXXtttKN17MiULimCf101pfm"
+const token = "vck_7FrOn8NYXQyMNOA1WTNEh1X2JIitCc4nhns5b2S21WoHlqvYAr0T4dDg"
 
 let messageHistory =[
 
@@ -10,12 +10,12 @@ async function makeModelRequest(message) {
         content:message,
     })
 
+    console.log(`Bearer `+token)
     const response = await fetch('https://ai-gateway.vercel.sh/v1/chat/completions', {
         method: 'POST',
-        mode:"no-cors",
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': `Bearer `+Token, // Replace with your actual API key
+            'Authorization': `Bearer `+token, // Replace with your actual API key
         },
         body: JSON.stringify({
             model: 'anthropic/claude-4-sonnet',
