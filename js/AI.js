@@ -48,4 +48,5 @@ function sendMessage(message){
     <div class="icon-container"></div>
 </div>
     `
+    document.querySelector(".ai-response").appendChild(newEl)
 }
