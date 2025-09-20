@@ -361,8 +361,7 @@ require(["vs/editor/editor.main"], () => {
   monaco.editor.setTheme('rosepine');
 
   window.editor = monaco.editor.create(document.querySelector('.code-section'), {
-    value: `
-let playerX = 250;
+    value: `let playerX = 250;
 let playerY = 250;
 let playerSize = 50;
 
@@ -377,82 +376,82 @@ let pipeWidth = 50;
 
 let score = 0;
 
-function setup(){
+function setup() {
   //setup code here
 }
 
-function draw(){
-  background(100,200,255)
+function draw() {
+  background(100, 200, 255)
 
-  if(crashed==false){
+  if (crashed == false) {
     movePlayer();
     movePipes();
-  }else{
+  } else {
     gameOverScreen();
   }
-  
+
   drawPlayer();
   drawPipes();
-  
+
   drawScore();
 }
 
-function drawScore(){
+function drawScore() {
   fill(255);
   textSize(24)
-  text("Score: "+score,10,25);
+  text("Score: " + score, 10, 25);
 }
 
-function drawPipes(){
-  fill(0,255,0);
-  rect(pipeX,0,pipeWidth,topPipeHeight);
-  rect(pipeX, 500-bottomPipeHeight, pipeWidth, bottomPipeHeight);
+function drawPipes() {
+  fill(0, 255, 0);
+  rect(pipeX, 0, pipeWidth, topPipeHeight);
+  rect(pipeX, 500 - bottomPipeHeight, pipeWidth, bottomPipeHeight);
 }
 
-function movePipes(){
-  pipeX-=3;
+function movePipes() {
+  pipeX -= 3;
 
-  if(pipeX<-pipeWidth){
-    pipeX=500;
-    bottomPipeHeight = random(50,220)
-    topPipeHeight = random(50,220)
-    score+=1;
+  if (pipeX < -pipeWidth) {
+    pipeX = 500;
+    bottomPipeHeight = random(50, 220)
+    topPipeHeight = random(50, 220)
+    score += 1;
   }
 }
 
-function drawPlayer(){
-  fill(255,255,0);
-  ellipse(playerX,playerY,playerSize,playerSize);
+function drawPlayer() {
+  fill(255, 255, 0);
+  ellipse(playerX, playerY, playerSize, playerSize);
 }
 
-function movePlayer(){
-  playerY+=gravity;
-  gravity+=0.3;
+function movePlayer() {
+  playerY += gravity;
+  gravity += 0.3;
 
-  if(gravity>8){
+  if (gravity > 8) {
     gravity = 8;
   }
-  if(gravity<-8){
+  if (gravity < -8) {
     gravity = -8;
   }
-  
-  if(playerY>500||playerY<0){
+
+  if (playerY > 500 || playerY < 0) {
     crashed = true;
   }
 
-  if( collision(pipeX,0,pipeWidth,topPipeHeight) ){
+  if (collision(pipeX, 0, pipeWidth, topPipeHeight)) {
     crashed = true;
   }
-  if( collision(pipeX, 500-bottomPipeHeight, pipeWidth, bottomPipeHeight) ){
+  if (collision(pipeX, 500 - bottomPipeHeight, pipeWidth, bottomPipeHeight)) {
     crashed = true;
   }
 }
 
-function mousePressed(){
+function mousePressed() {
   gravity = -6;
 }
 
-function gameOverScreen(){
+function gameOverScreen() {
   fill(255)
 
   textSize(24);
@@ -460,8 +459,8 @@ function gameOverScreen(){
   text("Game Over", 200, 200);
 
   text("Click to restart", 180, 350);
-  
-  if(crashed && mouseIsPressed){
+
+  if (crashed && mouseIsPressed) {
     playerY = 250;
     gravity = 0;
     crashed = false;
@@ -470,16 +469,15 @@ function gameOverScreen(){
   }
 }
 
-function collision(x1, y1, w1, h1){
-  if (x1 + w1 >= playerX - playerSize/2 &&
-      x1 <= playerX + playerSize/2 &&
-      y1 + h1 >= playerY - playerSize/2 &&
-      y1 <= playerY + playerSize/2) {
-        return true;
+function collision(x1, y1, w1, h1) {
+  if (x1 + w1 >= playerX - playerSize / 2 &&
+    x1 <= playerX + playerSize / 2 &&
+    y1 + h1 >= playerY - playerSize / 2 &&
+    y1 <= playerY + playerSize / 2) {
+    return true;
   }
   return false;
 }
-
 `,
     language: 'javascript',
     theme: 'rosepine',
