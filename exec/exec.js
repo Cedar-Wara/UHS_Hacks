@@ -15,7 +15,11 @@ const acceptedFunctions = [
 
 
 console.log = (...args)=>{
-    window.parent.postMessage(args)
+    window.parent.postMessage({type:"log",message:args})
+}
+
+console.error = (...args)=>{
+    window.parent.postMessage({type:"error",message:args})
 }
 
 window.addEventListener("message", (event)=>{
