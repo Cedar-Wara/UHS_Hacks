@@ -10,6 +10,10 @@ frame.onload = () => {
 }
 
 window.addEventListener('message', e => {
+  if (e.data.message === undefined) {
+    return
+  }
+
   logConsole(e.data.message, e.data.type)
     promptAI(e.data.message);
 })

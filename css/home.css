@@ -33,6 +33,11 @@ body {
 
 }
 
+.introductiontext{
+    background-color: (--neutral-med);
+    border-radius: 10px;
+}
+
 h1{
     margin: 0 0 16px;
 }
@@ -55,4 +60,23 @@ h1{
     width: 50vw;
     flex-shrink: 0;
     height: 100vh;
+}
+
+.button {
+    background-color: (--primary1);
+    border-radius: 5px;
+    padding: 2px 8px;
+    margin: 4px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    user-select: none;
+}
+
+.button:hover {
+    transform: translateY(-3px) scale(1.02);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
