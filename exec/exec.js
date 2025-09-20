@@ -1,3 +1,19 @@
+const acceptedFunctions = [
+    "mousePressed",
+    "mouseReleased",
+    "mouseClicked",
+    "mouseMoved",
+    "mouseDragged",
+    "doubleClicked",
+    "mouseWheel",
+    "keyPressed",
+    "keyReleased",
+    "keyTyped",
+    "touchStarted",
+    "touchEnded",
+]
+
+
 console.log = (...args)=>{
     window.parent.postMessage(args)
 }
