@@ -2,6 +2,10 @@
     --ai-gradient:linear-gradient(155deg,var(--primary1) 0%, var(--primary2) 100%);
 }
 
+.ai-section{
+    justify-content: space-between;
+}
+
 .text-box{
     outline:none;
     border:2px solid var(--neutral-dark);
@@ -10,6 +14,7 @@
     padding:4px;
     font-size:16px;
     transition: border ease-in-out .15s, border-radius ease-in-out .15s;
+    margin:4px;
 }
 
 .text-box:focus{
