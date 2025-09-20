@@ -1,10 +1,21 @@
 .console {
     border-top: 2px solid var(--primary2);
+    background-color: #191724;
     flex:1;
+    font-size: .67em;
+}
+
+.log {
+    color: #eb6f92;
+}
+
+.message {
+    color: var(--light-text);
 }
 
 .exec-frame {
     height: 50vh;
+    flex-shrink: 0;
 }
 
 .exec-frame iframe {
