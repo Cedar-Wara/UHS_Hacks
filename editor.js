@@ -13,84 +13,48 @@ let rosepineJson = `{
       "token": "comment"
     },
     {
-      "foreground": "f6c177",
-      "token": "string"
+      "foreground": "908caa",
+      "token": "punctuation.definition.comment"
     },
     {
-      "foreground": "c4a7e7",
-      "token": "constant.numeric"
+      "foreground": "6e6a86",
+      "token": "comment.block.documentation"
     },
     {
-      "foreground": "c4a7e7",
-      "token": "constant.language"
-    },
-    {
-      "foreground": "c4a7e7",
-      "token": "constant.character"
-    },
-    {
-      "foreground": "c4a7e7",
-      "token": "constant.other"
+      "foreground": "e0def4",
+      "token": "variable"
     },
     {
       "foreground": "ebbcba",
       "token": "variable.other.readwrite.instance"
     },
     {
-      "foreground": "eb6f92",
-      "token": "constant.character.escaped"
-    },
-    {
-      "foreground": "eb6f92",
-      "token": "constant.character.escape"
-    },
-    {
-      "foreground": "eb6f92",
-      "token": "string source"
-    },
-    {
-      "foreground": "eb6f92",
-      "token": "string source.ruby"
+      "foreground": "ebbcba",
+      "token": "variable.other"
     },
     {
       "foreground": "eb6f92",
       "token": "keyword"
     },
     {
-      "foreground": "eb6f92",
-      "token": "storage"
-    },
-    {
-      "foreground": "9ccfd8",
-      "fontStyle": "italic",
+      "foreground": "31748f",
       "token": "storage.type"
     },
     {
       "foreground": "31748f",
-      "fontStyle": "underline",
-      "token": "entity.name.class"
+      "token": "storage.modifier"
     },
     {
-      "foreground": "31748f",
-      "fontStyle": "italic underline",
-      "token": "entity.other.inherited-class"
+      "foreground": "f6c177",
+      "token": "string"
     },
     {
-      "foreground": "31748f",
-      "token": "entity.name.function"
+      "foreground": "f6c177",
+      "token": "string.quoted"
     },
     {
-      "foreground": "ebbcba",
-      "fontStyle": "italic",
-      "token": "variable.parameter"
-    },
-    {
-      "foreground": "eb6f92",
-      "token": "entity.name.tag"
-    },
-    {
-      "foreground": "31748f",
-      "token": "entity.other.attribute-name"
+      "foreground": "f6c177",
+      "token": "string.escape"
     },
     {
       "foreground": "9ccfd8",
@@ -101,28 +65,94 @@ let rosepineJson = `{
       "token": "support.constant"
     },
     {
-      "foreground": "9ccfd8",
-      "fontStyle": "italic",
-      "token": "support.type"
+      "foreground": "c4a7e7",
+      "token": "entity.name.class"
     },
     {
-      "foreground": "9ccfd8",
-      "fontStyle": "italic",
-      "token": "support.class"
+      "foreground": "c4a7e7",
+      "token": "entity.other.inherited-class"
     },
     {
-      "foreground": "e0def4",
-      "background": "eb6f92",
+      "foreground": "c4a7e7",
+      "token": "entity.name.tag"
+    },
+    {
+      "foreground": "eb6f92",
+      "token": "constant.language"
+    },
+    {
+      "foreground": "eb6f92",
+      "token": "constant.numeric"
+    },
+    {
+      "foreground": "eb6f92",
+      "token": "constant.other"
+    },
+    {
+      "foreground": "eb6f92",
+      "token": "constant.character.escape"
+    },
+    {
+      "foreground": "eb6f92",
       "token": "invalid"
     },
     {
       "foreground": "e0def4",
-      "background": "c4a7e7",
-      "token": "invalid.deprecated"
+      "background": "eb6f92",
+      "token": "invalid.illegal"
     },
     {
       "foreground": "e0def4",
-      "token": "meta.structure.dictionary.json string.quoted.double.json"
+      "background": "908caa",
+      "token": "invalid.deprecated"
+    },
+    {
+      "foreground": "ebbcba",
+      "token": "entity.name.function"
+    },
+    {
+      "foreground": "ebbcba",
+      "token": "variable.parameter"
+    },
+    {
+      "foreground": "eb6f92",
+      "token": "message.error"
+    },
+    {
+      "foreground": "9ccfd8",
+      "token": "markup.inserted"
+    },
+    {
+      "foreground": "eb6f92",
+      "token": "markup.deleted"
+    },
+    {
+      "foreground": "f6c177",
+      "token": "markup.changed"
+    },
+    {
+      "foreground": "ebbcba",
+      "token": "entity.name.namespace"
+    },
+    {
+      "foreground": "31748f",
+      "token": "entity.other.attribute-name"
+    },
+    {
+      "foreground": "c4a7e7",
+      "token": "support.type"
+    },
+    {
+      "foreground": "f6c177",
+      "token": "constant.character"
+    },
+    {
+      "foreground": "e0def4",
+      "token": "text"
+    },
+    {
+      "foreground": "e0def4",
+      "token": "meta.structure"
     },
     {
       "foreground": "6e6a86",
@@ -130,85 +160,23 @@ let rosepineJson = `{
     },
     {
       "foreground": "6e6a86",
-      "token": "meta.diff.header"
-    },
-    {
-      "foreground": "eb6f92",
-      "token": "markup.deleted"
-    },
-    {
-      "foreground": "31748f",
-      "token": "markup.inserted"
-    },
-    {
-      "foreground": "f6c177",
-      "token": "markup.changed"
-    },
-    {
-      "foreground": "c4a7e7",
-      "token": "constant.numeric.line-number.find-in-files - match"
-    },
-    {
-      "foreground": "f6c177",
-      "token": "entity.name.filename"
-    },
-    {
-      "foreground": "eb6f92",
-      "token": "message.error"
-    },
-    {
-      "foreground": "e0def4",
-      "token": "punctuation.definition.string.begin.json - meta.structure.dictionary.value.json"
-    },
-    {
-      "foreground": "e0def4",
-      "token": "punctuation.definition.string.end.json - meta.structure.dictionary.value.json"
-    },
-    {
-      "foreground": "9ccfd8",
-      "token": "meta.structure.dictionary.json string.quoted.double.json"
-    },
-    {
-      "foreground": "f6c177",
-      "token": "meta.structure.dictionary.value.json string.quoted.double.json"
-    },
-    {
-      "foreground": "31748f",
-      "token": "meta meta meta meta meta meta meta.structure.dictionary.value string"
-    },
-    {
-      "foreground": "ebbcba",
-      "token": "meta meta meta meta meta meta.structure.dictionary.value string"
-    },
-    {
-      "foreground": "eb6f92",
-      "token": "meta meta meta meta meta.structure.dictionary.value string"
-    },
-    {
-      "foreground": "c4a7e7",
-      "token": "meta meta meta meta.structure.dictionary.value string"
-    },
-    {
-      "foreground": "31748f",
-      "token": "meta meta meta.structure.dictionary.value string"
-    },
-    {
-      "foreground": "ebbcba",
-      "token": "meta meta.structure.dictionary.value string"
+      "token": "meta.separator"
     }
   ],
   "colors": {
     "editor.foreground": "#e0def4",
     "editor.background": "#191724",
-    "editor.selectionBackground": "#403d52",
-    "editor.lineHighlightBackground": "#26233a",
+    "editor.selectionBackground": "#6e6a8633",
+    "editor.lineHighlightBackground": "#6e6a861a",
     "editorCursor.foreground": "#e0def4",
-    "editorWhitespace.foreground": "#6e6a86",
-    "editorIndentGuide.activeBackground": "#524f67",
-    "editor.selectionHighlightBorder": "#524f67"
+    "editorWhitespace.foreground": "#6e6a8680",
+    "editorIndentGuide.activeBackground": "#31748f",
+    "editor.selectionHighlightBorder": "#191724",
+    "editor.inactiveSelectionBackground": "#6e6a861a",
+    "editor.selectionHighlightBackground": "#6e6a8633"
   }
 }
-`
+`;
 
 require(["vs/editor/editor.main"], () => {
   monaco.editor.defineTheme('rosepine', JSON.parse(rosepineJson));
@@ -233,7 +201,8 @@ if (ready && x > 0) {
   console.log(msg);
 } else {
   console.warn("Not ready!");
-} `,
+}
+`,
     language: 'javascript',
     theme: 'rosepine',
   });
