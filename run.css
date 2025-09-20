@@ -22,4 +22,10 @@
 .button{
     border-radius:5px;
     padding:4px;
+    margin:4px;
+}
+.button-bar{
+    display: flex;
+    flex-direction: row;
+
 }
