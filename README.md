@@ -3,6 +3,7 @@
 Welcome to our repository for UHS Hackathon!
 
 Team members:
-- @MichaelYoDev
-- @Cedar-Wara
 - @Alisa-Leung
+- @Cedar-Wara
+- @GreasyRooster1
+- @MichaelYoDev
