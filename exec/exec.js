@@ -68,13 +68,9 @@ function runJs(js) {
 
 function startP5(drawArg, setupArg, otherFunctions) {
   window.setup = function() {
-    createCanvas(500, 500);
-    createCanvas = function() {
-      console.error("createCanvas is disabled");
-    }
+    setupArg()
     document.getElementById("defaultCanvas0").style.width = "100vmin";
     document.getElementById("defaultCanvas0").style.height = "100vmin";
-    setupArg()
   };
 
   for (let func of otherFunctions) {
